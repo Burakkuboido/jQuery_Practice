@@ -1,0 +1,62 @@
+.blue {
+    background-color: blue;
+}
+
+#block {
+    background-color: #bca;
+    width: 100px;
+    border: 1px solid green;
+}
+
+body {
+    font-size: 1em;
+    background: beige;
+}
+
+button {
+    font-size: .7em;
+}
+
+.target {
+    border: 2px solid #bbb;
+    background-color: LightSkyBlue;
+    padding: 10px;
+    margin: 10px 0;
+}
+
+/*
+.child {
+    display: block;
+    width: 90px;
+    color: white;
+    font: bold 12px;
+    padding: 5px 10px;
+    background-color: orange;
+}
+
+.sibling {
+    display: block;
+    width: 90px;
+    color: white;
+    font: bold 12px;
+    padding: 5px 10px;
+    background-color: SlateGray;
+}
+*/
+
+.red {
+    color: red;
+}
+
+.big {
+    font-size: 36px;
+}
+
+.container * {
+    display: block;
+    border: 2px solid DarkSeaGreen;
+    color: DarkSeaGreen;
+    padding: 5px;
+    margin: 15px;
+    background: papayawhip;
+}
