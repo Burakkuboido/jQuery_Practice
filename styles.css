@@ -8,6 +8,12 @@
     border: 1px solid green;
 }
 
+#block2 {
+    background-color: #bca;
+    width: 100px;
+    border: 1px solid green;
+}
+
 body {
     font-size: 1em;
     background: beige;
@@ -48,9 +54,7 @@ button {
     color: red;
 }
 
-.big {
-    font-size: 36px;
-}
+
 
 .container * {
     display: block;
@@ -59,4 +63,20 @@ button {
     padding: 5px;
     margin: 15px;
     background: papayawhip;
+}
+
+.small {
+    font-size: 8px;
+}
+
+.addedClass {
+    color: pink;
+}
+
+.forRemoving {
+    color: orangered;
+}
+
+.toggled {
+    color: aqua;
 }

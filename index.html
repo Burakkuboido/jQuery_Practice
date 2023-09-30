@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
@@ -9,21 +10,34 @@
 </head>
 <body>
     <h2>Hello my people</h2>
-    <p id="cereal">This is cereal</p>
-    <p class="unicycle">This is unicycle</p>
-    <div class="unicycle">This is unicycle too!</div>
-    <button>Click Me</button>
+    <p id="clicked">Click me and check the console!</p>
+    <p class="hover">Hover over me and hover away and check the console!</p>
+    <div class="once">Click me and check the console. It will only run once!</div>
 
     <br>
     <br>
 
+    <p id="fade">This paragraph fades in then out! You can also click me to stop the animation!</p>
+    <p id="addclass">This paragraph will run its fadeIn and it will add a class to the element!</p>
+    <h3>This header gets hidden, has a delay, then shows!</h3>
+
+    <br>
+    <br>
+
+    <p>This run button runs an animation. It will animate the block below all at once!</p>
     <button id="go">Run</button>
     <div id="block">Hello!</div>
+    <p>This run button runs an animation. It will animate the block below one at a time!</p>
+    <button id="go2">Run</button>
+    <div id="block2">Hello!</div>
 
     <br>
     <br>
 
-    <p id="test">Let's go with <a href="https://freecodecamp.org" id="fcc">freeCodeCamp</a>!</p>
+    <p>Show content shows the attribute for the id for google. Check the console!</p>
+    <p>Set content returns the old text and replaces it with new text! It even gives the index!</p>
+    <p>Set Value changes the value of the input field to be Ben Green!</p>
+    <p id="test">Let's go with <a href="https://google.com" id="google">google.com</a>!</p>
     <p>Name: <input type="text" value="Beau Carnes" id="name"></p>
     <button id="btn">Show Content</button>
     <button id="btn2">Set Content</button>
@@ -36,23 +50,39 @@
     <div class="target">
         <p class="filter">This div is a target for all sorts of things.</p>
         <p>It doesnt even know what could happen to it.</p>
+        <p>Click the button to REMOVE an element with the class of filter!</p>
+        <button id="remove">Click</button>
     </div>
 
     <br>
     <br>
 
     <h1>jQuery: CSS and Classes</h1>
-    <h2 class="red">Heading 2</h2>
-    <p>This is a paragraph</p>
-    <p class="big">This is another paragraph.</p>
+    <p class="changecss">For Changing CSS!</p>
+    <p class="forAdding">For Adding!</p>
+    <p class="forRemoving">For Removing!</p>
+    <p class="forToggling toggled">For Toggling!</p>
+    <p class="hasClass">This P element has a class called "hasClass"! </p>
+    <ul>
+        <li>"Change CSS" Edits the css file for the element selected.</li>
+        <li>"Add" Adds a class from the element selected.</li>
+        <li>"Remove" removes a class from the element selected.</li>
+        <li>"Toggle" Toggles the class "toggled" for the P element.</li>
+        <li>"Has Class" Checks whether the p element has the "hasClass" class.</li>
+    </ul>
 
-    <button>Click Me!</button>
+    <button id="changecss">Change CSS</button>
+    <button id="add">Add</button>
+    <button id="removes">Remove</button>
+    <button id="toggle">Toggle</button>
+    <button id="has">Has Class</button>
 
     <br>
     <br>
 
-    <div class="container">
-        jQuery: Traversing the DOM
+        <p>jQuery: Traversing the DOM</p>
+        <p>Check the code under "jQuery: Traversing the DOM" to see how we can traverse the DOM.</p>
+        <div class="container">
         <div>div
             <ul>ul
                 <li>li
@@ -70,7 +100,13 @@
 
     <h1>AJAX with jQuery!</h1>
     <p id="demo">Let AJAX change this text</p>
-    <button type="button" onclick="loadDoc()">Change Content</button>
+    <input type="button" onclick="loadDoc()" value="Change Content"></button>
+
+    <div id = "stage">
+        
+     </div>
+      
+     <input type="button" id="driver" value="Load Data"/>
     
 </body>
 <script src="scripts.js"></script>
