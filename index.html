@@ -9,78 +9,77 @@
     <link rel="stylesheet" href="/styles.css">
 </head>
 <body>
-    <h2>Hello my people</h2>
-    <p id="clicked">Click me and check the console!</p>
-    <p class="hover">Hover over me and hover away and check the console!</p>
-    <div class="once">Click me and check the console. It will only run once!</div>
-
-    <br>
-    <br>
-
-    <p id="fade">This paragraph fades in then out! You can also click me to stop the animation!</p>
-    <p id="addclass">This paragraph will run its fadeIn and it will add a class to the element!</p>
-    <h3>This header gets hidden, has a delay, then shows!</h3>
-
-    <br>
-    <br>
-
-    <p>This run button runs an animation. It will animate the block below all at once!</p>
-    <button id="go">Run</button>
-    <div id="block">Hello!</div>
-    <p>This run button runs an animation. It will animate the block below one at a time!</p>
-    <button id="go2">Run</button>
-    <div id="block2">Hello!</div>
-
-    <br>
-    <br>
-
-    <p>Show content shows the attribute for the id for google. Check the console!</p>
-    <p>Set content returns the old text and replaces it with new text! It even gives the index!</p>
-    <p>Set Value changes the value of the input field to be Ben Green!</p>
-    <p id="test">Let's go with <a href="https://google.com" id="google">google.com</a>!</p>
-    <p>Name: <input type="text" value="Beau Carnes" id="name"></p>
-    <button id="btn">Show Content</button>
-    <button id="btn2">Set Content</button>
-    <button id="btn3">Set Value</button>
-
-    <br>
-    <br>
-
-    <h2>jQuery: Adding and Removing Elements</h2>
-    <div class="target">
-        <p class="filter">This div is a target for all sorts of things.</p>
-        <p>It doesnt even know what could happen to it.</p>
-        <p>Click the button to REMOVE an element with the class of filter!</p>
-        <button id="remove">Click</button>
+    <div class="page">
+    <div class="containers">
+        <h2>jQuery: Events</h2>
+        <p id="clicked">Click me and check the console!</p>
+        <p class="hover">Hover over me and hover away and check the console!</p>
+        <div class="once">Click me and check the console. It will only run once!</div>
     </div>
 
-    <br>
-    <br>
+    <div class="containers">
+        <h2>jQuery: Effects</h2>
+        <p id="fade">This paragraph fades in then out! You can also click me to stop the animation!</p>
+        <p id="addclass">This paragraph will run its fadeIn and it will add a class to the element!</p>
+        <h3>This header gets hidden, has a delay, then shows!</h3>
+    </div>
 
-    <h1>jQuery: CSS and Classes</h1>
-    <p class="changecss">For Changing CSS!</p>
-    <p class="forAdding">For Adding!</p>
-    <p class="forRemoving">For Removing!</p>
-    <p class="forToggling toggled">For Toggling!</p>
-    <p class="hasClass">This P element has a class called "hasClass"! </p>
-    <ul>
-        <li>"Change CSS" Edits the css file for the element selected.</li>
-        <li>"Add" Adds a class from the element selected.</li>
-        <li>"Remove" removes a class from the element selected.</li>
-        <li>"Toggle" Toggles the class "toggled" for the P element.</li>
-        <li>"Has Class" Checks whether the p element has the "hasClass" class.</li>
-    </ul>
+    <div class="containers">
+        <h2>jQuery: Animate</h2>
+        <p>This run button runs an animation. It will animate the block below all at once!</p>
+        <button id="go">Run</button>
+        <div id="block">Hello!</div>
+        <p>This run button runs an animation. It will animate the block below one at a time!</p>
+        <button id="go2">Run</button>
+        <div id="block2">Hello!</div>
+    </div>
 
-    <button id="changecss">Change CSS</button>
-    <button id="add">Add</button>
-    <button id="removes">Remove</button>
-    <button id="toggle">Toggle</button>
-    <button id="has">Has Class</button>
+    <div class="containers">
+        <h2>jQuery: Getting and Setting Content and Attributes</h2>
+        <p>Show content shows the attribute for the id for google. Check the console!</p>
+        <p>Set content returns the old text and replaces it with new text! It even gives the index!</p>
+        <p>Set Value changes the value of the input field to be Ben Green!</p>
+        <p id="test">Let's go with <a href="https://google.com" id="google">google.com</a>!</p>
+        <p>Name: <input type="text" value="Beau Carnes" id="name"></p>
+        <button id="btn">Show Content</button>
+        <button id="btn2">Set Content</button>
+        <button id="btn3">Set Value</button>
+    </div>
 
-    <br>
-    <br>
+    <div class="containers">
+        <h2>jQuery: Adding and Removing Elements</h2>
+        <div class="target">
+            <p class="filter">This div is a target for all sorts of things.</p>
+            <p>It doesnt even know what could happen to it.</p>
+            <p>Click the button to REMOVE an element with the class of filter!</p>
+            <button id="remove">Click</button>
+        </div>
+    </div>
 
-        <p>jQuery: Traversing the DOM</p>
+    <div class="containers">
+        <h2>jQuery: CSS and Classes</h2>
+        <p class="changecss">For Changing CSS!</p>
+        <p class="forAdding">For Adding!</p>
+        <p class="forRemoving">For Removing!</p>
+        <p class="forToggling toggled">For Toggling!</p>
+        <p class="hasClass">This P element has a class called "hasClass"! </p>
+        <ul>
+            <li>"Change CSS" Edits the css file for the element selected.</li>
+            <li>"Add" Adds a class from the element selected.</li>
+            <li>"Remove" removes a class from the element selected.</li>
+            <li>"Toggle" Toggles the class "toggled" for the P element.</li>
+            <li>"Has Class" Checks whether the p element has the "hasClass" class.</li>
+        </ul>
+    
+        <button id="changecss">Change CSS</button>
+        <button id="add">Add</button>
+        <button id="removes">Remove</button>
+        <button id="toggle">Toggle</button>
+        <button id="has">Has Class</button>
+    </div>
+
+    <div class="containers">
+        <h2>jQuery: Traversing the DOM</h2>
         <p>Check the code under "jQuery: Traversing the DOM" to see how we can traverse the DOM.</p>
         <div class="container">
         <div>div
@@ -97,16 +96,20 @@
             </ul>
         </div>
     </div>
-
-    <h1>AJAX with jQuery!</h1>
-    <p id="demo">Let AJAX change this text</p>
-    <input type="button" onclick="loadDoc()" value="Change Content"></button>
-
-    <div id = "stage">
-        
-     </div>
-      
-     <input type="button" id="driver" value="Load Data"/>
+    </div>
+    
+    <div class="containers">
+        <h2>jQuery: AJAX</h2>
+        <p id="demo">Let AJAX change this text</p>
+        <input type="button" onclick="loadDoc()" value="Change Content"></button>
+    
+        <div id = "stage">
+            
+         </div>
+          
+         <input type="button" id="driver" value="Load Data"/>
+    </div>
+    </div>
     
 </body>
 <script src="scripts.js"></script>

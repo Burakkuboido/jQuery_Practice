@@ -1,3 +1,11 @@
+* {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+
+
 .blue {
     background-color: blue;
 }
@@ -16,7 +24,7 @@
 
 body {
     font-size: 1em;
-    background: beige;
+    background: black;
 }
 
 button {
@@ -80,3 +88,124 @@ button {
 .toggled {
     color: aqua;
 }
+
+.page {
+    padding-top: 0;
+    display: flex;
+    height: 100%;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.containers {
+    width: 24.688vw;
+    height: 50vh;
+    overflow: auto;
+    text-align: center;
+    border-top: 1px solid black;
+    border-right: 1px solid black;
+    border-left: 1px solid black;
+    background: beige;
+}
+
+h2 {
+    text-align: center;
+    padding-bottom: 1em;
+}
+
+p,
+li,
+div {
+    padding-top: 0.5em;
+}
+
+button,
+input {
+    margin-top: 0.5em;
+    padding: 0.5em;
+}
+
+@media screen and (max-width: 480px) {
+        * {
+            overflow: visible;
+        }
+
+        .page {
+            display: flex;
+            height: 100%;
+            width: 100%;
+            flex-wrap: wrap;
+            padding-top: 0;
+            justify-content: space-between;
+        }
+        
+        .containers {
+            width: 100vw;
+            height: 60vh;
+            overflow: auto;
+            text-align: center;
+            border: 1px solid black;
+        }
+    }
+
+    @media screen and (min-width: 481px) and (max-width: 768px) {
+        * {
+            overflow: visible;
+        }
+
+        .page {
+            display: flex;
+            height: 100%;
+            width: 100%;
+            flex-wrap: wrap;
+            padding-top: 0;
+            justify-content: space-between;
+        }
+        
+        .containers {
+            width: 47vw;
+            height: 50vh;
+            overflow: auto;
+            text-align: center;
+            border-top: 1px solid black;
+            border-right: 1px solid black;
+            border-left: 1px solid black;
+        }
+    }
+
+    @media screen and (min-width: 769px) and (max-width: 1024px) {
+        * {
+            overflow: visible;
+        }
+
+        .page {
+            display: flex;
+            height: 100%;
+            width: 100%;
+            flex-wrap: wrap;
+            padding-top: 0;
+            justify-content: space-between;
+        }
+        
+        .containers {
+            width: 48vw;
+            height: 50vh;
+            overflow: auto;
+            text-align: center;
+            border-top: 1px solid black;
+            border-right: 1px solid black;
+            border-left: 1px solid black;
+        }
+    }
+
+
+
+
+/*
+320px — 480px: Mobile devices
+481px — 768px: iPads, Tablets
+769px — 1024px: Small screens, laptops
+1025px — 1200px: Desktops, large screens
+1201px and more —  Extra large screens, TV
+*/
